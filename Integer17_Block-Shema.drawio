@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2022-07-02T20:53:19.203Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36 Edg/103.0.1264.44" etag="16gghnMgRfzqOxHNPliF" version="20.0.4" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1038" dy="1725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Дано целое число, больше 999. Используя одну операцию деления нацело и одну операцию взятия остатка от деления, найти цифру, соответствующую разряду сотен в записи этого числа&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;glass=0;strokeWidth=1;shadow=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="-10" width="370" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-11" value="Repair Lamp" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="390" y="810" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b77LCI38j5oS1WyV5Z1C-0" value="Вводим четырёхзначное число:&#xa;Scanner in = new Scanner(System.in);&#xa;System.out.print(&quot;Введите четырёхзначное число: &quot;);&#xa;int L = in.nextInt();" style="shape=parallelogram;perimeter=parallelogramPerimeter;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;fontFamily=Helvetica;horizontal=1;align=center;verticalAlign=middle;textDirection=ltr;fontColor=default;labelBackgroundColor=none;labelBorderColor=none;spacingTop=1;spacingLeft=4;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="140" width="370" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="b77LCI38j5oS1WyV5Z1C-1" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=9;fontColor=default;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="b77LCI38j5oS1WyV5Z1C-0" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="300" as="sourcePoint" />
+            <mxPoint x="250" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b77LCI38j5oS1WyV5Z1C-2" value="&lt;font color=&quot;#000000&quot;&gt;Находим цифры едениц, десятков и сотен числа, после чего используем формулу для получения решения:&lt;br&gt;int sot = (L/100)%10;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Helvetica;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="270" width="370" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="b77LCI38j5oS1WyV5Z1C-3" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=14;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b77LCI38j5oS1WyV5Z1C-0" target="b77LCI38j5oS1WyV5Z1C-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="300" as="sourcePoint" />
+            <mxPoint x="250" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b77LCI38j5oS1WyV5Z1C-4" value="Выводим в консоль результат:&lt;br&gt;System.out.println(&quot;Результат: &quot; + sot);" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;labelBackgroundColor=none;labelBorderColor=none;fontFamily=Helvetica;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="390" width="370" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="b77LCI38j5oS1WyV5Z1C-5" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=14;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b77LCI38j5oS1WyV5Z1C-2" target="b77LCI38j5oS1WyV5Z1C-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="300" as="sourcePoint" />
+            <mxPoint x="250" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b77LCI38j5oS1WyV5Z1C-6" value="Конец программы" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;glass=0;strokeWidth=1;shadow=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="160" y="500" width="370" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="b77LCI38j5oS1WyV5Z1C-8" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;fontSize=18;fontColor=#000000;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.501;exitY=0.849;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b77LCI38j5oS1WyV5Z1C-4" target="b77LCI38j5oS1WyV5Z1C-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="510" as="sourcePoint" />
+            <mxPoint x="250" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
